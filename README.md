@@ -3,11 +3,8 @@ This is my experience running spark applications on kubernetes via the operator
 
 ## Install spark-operator
 
-	Using the helm chart below to deploy the operator
+	Using the helm chart here: https://github.com/GoogleCloudPlatform/spark-on-k8s-operator to deploy the operator
 
-  ```
-  https://github.com/GoogleCloudPlatform/spark-on-k8s-operator
-  ```
 
   To install, run the commands below:
   ```
@@ -46,7 +43,7 @@ This is my experience running spark applications on kubernetes via the operator
  at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
  ```
 
- Create a serviceaccount
+ To get around the above, Create a serviceaccount
  ```
  kubectl create serviceaccount spark
  ```
