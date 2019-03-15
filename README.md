@@ -1,12 +1,20 @@
 # Spark On Kubernetes
 This is my experience running spark applications on kubernetes via the operator
 
-## Begin:
-	Using the helm chart below to deploy the operator:
+## Install spark-operator
+	Using the helm chart below to deploy the operator
+
   ```
   https://github.com/GoogleCloudPlatform/spark-on-k8s-operator
   ```
-	The operator spins up in spark-operator namespace.
+
+  To install, run the commands below:
+  ```
+  helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
+  helm install incubator/sparkoperator --namespace spark-operator
+  ```
+
+  The operator spins up in spark-operator namespace.
 
 ## Next Steps:
   Deploy an example spark application in the examples directory. Upon following the logs from the operator, there are errors reported
@@ -55,8 +63,8 @@ This is my experience running spark applications on kubernetes via the operator
 
  At this point, you should see driver and executor pods corresponding to the above applications.
 
- Delete the CRD's above to verify if the pods get cleaned up
+ Delete the CRD's above to verify that the pods get cleaned up
  ```
  kubectl delete -f examples/spark-py-pi.yaml
  kubectl delete -f examples/spark-pi-prometheus.yaml
- ``` 
+ ```
