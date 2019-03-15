@@ -2,6 +2,7 @@
 This is my experience running spark applications on kubernetes via the operator
 
 ## Install spark-operator
+
 	Using the helm chart below to deploy the operator
 
   ```
