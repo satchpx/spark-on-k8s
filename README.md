@@ -2,7 +2,7 @@
 This repo illustrates running spark applications on kubernetes using the Spark Operator
 
 ## Spark persistence
-For spark persistence, skip ahead to
+For spark persistence, skip ahead to https://github.com/satchpx/spark-on-k8s/tree/master/spark-persistence
 
 ## Install spark-operator
 
