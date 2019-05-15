@@ -3,7 +3,7 @@ This example illustrates how to achieve persistence for spark applications using
 
 
 ## Concept
-We'll be using GoogleCloudPlatform Spark Operator on K8S to illustrate spark persistence. To deploy the spark operator, refer to: https://github.com/GoogleCloudPlatform/spark-on-k8s-operator
+We'll be using GoogleCloudPlatform Spark Operator on K8S to illustrate spark persistence. To deploy the spark operator, refer to: https://github.com/GoogleCloudPlatform/spark-on-k8s-operator and https://github.com/satchpx/spark-on-k8s
 
 
 The idea behind this solution is to use spark checkpointing and write ahead logs (WAL). To enable this, we need to deploy spark operator with mutating admission webhook enabled. Refer to https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/quick-start-guide.md#about-the-mutating-admission-webhook
