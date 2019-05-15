@@ -1,5 +1,8 @@
 # Spark On Kubernetes
-This is my experience running spark applications on kubernetes via the operator
+This repo illustrates running spark applications on kubernetes using the Spark Operator
+
+## Spark persistence
+For spark persistence, skip ahead to
 
 ## Install spark-operator
 
